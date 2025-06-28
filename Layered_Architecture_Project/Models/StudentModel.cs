@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace Layered_Architecture_Project.Models
 {
-    class StudentModel
+    public class StudentModel
     {
+        public int Id { get; set; }
+        public string Name { get; set; }
     }
 }

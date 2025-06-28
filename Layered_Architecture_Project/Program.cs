@@ -1,3 +1,5 @@
+using Layered_Architecture_Project.Forms;
+
 namespace Layered_Architecture_Project
 {
     internal static class Program
@@ -11,7 +13,7 @@ namespace Layered_Architecture_Project
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new Form1());
+            Application.Run(new StudentForm());
         }
     }
 }
