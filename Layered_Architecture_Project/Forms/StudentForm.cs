@@ -30,5 +30,10 @@ namespace Layered_Architecture_Project.Forms
             IStudentRepository studentRepository = new StudentRepository();
             studentRepository.AddStudent(student);
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

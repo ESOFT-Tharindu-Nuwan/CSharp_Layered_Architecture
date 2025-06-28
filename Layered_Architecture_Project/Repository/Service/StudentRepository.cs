@@ -3,6 +3,7 @@ using Layered_Architecture_Project.Repository.Interface;
 using Microsoft.Data.SqlClient;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -36,11 +37,15 @@ namespace Layered_Architecture_Project.Repository.Service
                 {
                     while (reader.Read())
                     {
-                        var student = new StudentModel
+                        StudentModel student = new StudentModel
                         {
-                            Name = reader.GetString("name")
+                            Id = reader.GetInt32("Id"),
+                            Name = reader.GetString("Name")
                         };
+
+                        Students.Add(student);
                     }
+                    return Students;
                 }
             }
         }

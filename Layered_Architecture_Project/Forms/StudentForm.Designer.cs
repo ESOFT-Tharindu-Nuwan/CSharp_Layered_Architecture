@@ -87,6 +87,7 @@
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.Size = new Size(300, 188);
             dataGridView1.TabIndex = 5;
+            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
             // StudentForm
             // 
